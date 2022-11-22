@@ -1,9 +1,10 @@
+.snake {
+    background-color: red;
+}
+
 td {
     height: 20px;
     width: 20px;
     background-color: blue;
 }
 
-.snake {
-    background-color: red;
-}
