@@ -3,3 +3,7 @@ td {
     width: 20px;
     background-color: blue;
 }
+
+.snake {
+    background-color: red;
+}

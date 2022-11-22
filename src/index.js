@@ -5,17 +5,15 @@ import Grid from './Grid';
 
 const App = () => {
 
-    let snake = {
-        body: [ [10, 5], [10, 6], [10, 7], [10, 8] ],
-        nextDirection: [0,1]
-    };
-
     const [grid, setGrid] = useState(30)
+    const [snake, setSnake] = useState([ [10, 5], [10, 6], [10, 7], [10, 8] ] );
+    const [direction, setDirection] = useState([ 0,1 ]);
+    const [color, setColor] = useState("red");
 
   return (
     <div>
         Hello World!!!
-        <Grid element={grid} setGrid={setGrid} grid={grid}></Grid>
+        <Grid element={grid} setGrid={setGrid} grid={grid} snake={snake} setSnake={setSnake} direction={direction} setDirection={setDirection} color={color}></Grid>
     </div>
   )
 };
